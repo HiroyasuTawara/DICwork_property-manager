@@ -38,25 +38,26 @@
   
   <hr>
   
-  <%= form.fields_for :near_stations do |g| %>
-    <h3>最寄り駅<%= "#{g.index + 1}" %></h3>
+  
+  <%= form.fields_for :near_stations do |f| %>
+    <h3>最寄り駅<%= "#{f.index + 1}" %></h3>
     <div class="st-root">
-      <%= g.label "路線名" %>
-      <%= g.text_field :route %>
+      <%= f.label "路線名" %>
+      <%= f.text_field :route %>
     </div>
   
     <div class="st-name">
-      <%= g.label "駅名" %>
-      <%= g.text_field :name %>
+      <%= f.label "駅名" %>
+      <%= f.text_field :name %>
     </div>
   
     <div class="st-require-time">
-      <%= g.label "徒歩分数" %>
-      <%= g.text_field :required_time %>
+      <%= f.label "徒歩分数" %>
+      <%= f.text_field :required_time %>
     </div>
   <% end %>
-  
+
   <%= form.submit "登録"%>
   
 <% end %>
-<%= link_to "戻る", properties_path %>
+

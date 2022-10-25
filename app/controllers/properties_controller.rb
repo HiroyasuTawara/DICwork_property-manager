@@ -15,6 +15,7 @@ class PropertiesController < ApplicationController
 
   def edit
     @property = Property.find(params[:id])
+    @property.near_stations.build
   end
 
   def create
