@@ -11,9 +11,5 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^4.0.0"
-  },
-  "main": "index.js",
-  "repository": "https://github.com/diveintocode-corp/dev-exam-rails6.git",
-  "author": "Hiroyasu Tawara <“zen_qp_mai@icloud.com”>",
-  "license": "MIT"
+  }
 }

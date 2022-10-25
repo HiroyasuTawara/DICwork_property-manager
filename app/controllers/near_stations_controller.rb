@@ -1,3 +1,0 @@
-class NearStationsController < ApplicationController
-
-end
