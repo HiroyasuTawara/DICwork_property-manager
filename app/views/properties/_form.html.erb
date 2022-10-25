@@ -4,9 +4,9 @@
       <h2><%= pluralize(property.errors.count, "error") %> prohibited this blog from being saved:</h2>
 
       <ul>
-        <% @property.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
+        <% @property.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %> 
       </ul>
     </div>
   <% end %>

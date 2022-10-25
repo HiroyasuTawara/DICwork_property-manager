@@ -23,7 +23,8 @@ class PropertiesController < ApplicationController
     if @property.save
       redirect_to properties_path, notice: '登録完了'
     else
-      return :new, status: :unprocessable_entity
+      @property.near_stations.build
+      render :new
     end
   end
 
